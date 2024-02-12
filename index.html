@@ -1,79 +1,128 @@
 <html>
-<head>
-<title>VALENTINE'S DAY</title>
- <link
-      rel="icon"
-      type="image/png"
-      sizes="100%"
-      href="https://cdn-icons-png.flaticon.com/512/9444/9444300.png"
-    />
-<style>
-p {
-text-align: center;
-font-size: 32px;
-font-family: Georgia, serif;
-}
-img {
-display: block;
-margin: 0 auto;
-width: 23%;
-}
-</style>
-</head>
-<body>
- <p>
-  Just wondering if you have plans for Feb 14, Michelle? I’m thinking about doing something with you ;) 
-  Will you be my Valentine?
- </p>
-<img src="https://media1.tenor.com/m/5Ux5jcrpkHoAAAAC/a-peck-on-the-cheeks-pudgy-penguins.gif">
-</body>
-<title>Buttons</title>
-<style>
-#Button1 {
-position: fixed;
-top: 70%;
-left: 55%;
-transform: translate(-50%, -50%);
-}
-#Button2 {
-position: absolute;
- left: 39%;
-  top: 70%;
-}
-#bottom {
-  position: absolute;
-  bottom: 0;
-  left: 40%;
-}
-</style>
-</head>
-<body>
-<button id="Button1">Yes!</button>
-<button id="Button2">No</button>
-<script>
-const Button2 = document.getElementById('Button2');
-let left = 40;
-Button2.addEventListener('mouseover', function() {
-  if(left == 40){
-    left = 48;
-  }else{
-    left = 40;
-  }
-  this.style.left = left + '%';
-});
+  <head>
+    <script src="js/love.js"></script>
+    <title>WILL YOU BE MY VALENTINE?</title>
+    <link
+          rel="icon"
+          type="image/png"
+          sizes="100%"
+          href="https://cdn-icons-png.flaticon.com/512/9444/9444300.png"
+        />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      p {
+      text-align: center;
+      font-size: 32px;
+      font-family: Georgia, serif;
+      }
+      img {
+      display: block;
+      margin: 0 auto;
+      width: 23%;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Just wondering if you have plans for Feb 14, Michelle? I’m thinking about doing something with you ;) 
+      Will you be my Valentine?
+    </p>
+    <img src="https://media1.tenor.com/m/5Ux5jcrpkHoAAAAC/a-peck-on-the-cheeks-pudgy-penguins.gif">
+  </body>
+  <title>Buttons</title>
+  <style>
+    #Button1 {
+    position: fixed;
+    top: 70%;
+    left: 55%;
+    font-weight: bold;
+    font-size: large;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    }
+    #Button2 {
+    position: absolute;
+    left: 33%;
+      top: 70%;
+    }
+    #bottom {
+      position: absolute;
+      bottom: 0;
+      left: 40%;
+    }
+  </style>
+  </head>
+  <body style="background-color:#d8eaf4;">
+    <!-- <button id="Button1">Yes!</button> -->
+    <button type="button" id="Button2" class="btn btn-secondary">
+      No :(
+    </button>
+    <!-- <button id="Button2">No</button> -->
+    <script>
+      const Button2 = document.getElementById('Button2');
+      let left = 30;
+      Button2.addEventListener('mouseover', function() {
+        if(left == 30){
+          left = 45;
+        }else{
+          left = 30;
+        }
+        this.style.left = left + '%';
+      });
+    </script>
+    <!-- <script src="js/yes.js"></script> -->
+    <div class="container">
+      <button type="button" id="Button1" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Yes!  (´♡‿♡`)
+      </button>
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h2 class="modal-title">Will you be my Valentine?</h2>
+              <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+              <h5>Dear Michelle, </h5>
+              <p> </p>
+              <p> </p>
+              <h5>As Valentine's Day draws near, my heart feels compelled to express the depths of my affection for you. You are the embodiment of everything I've ever hoped for in a partner - your kindness, intelligence, and unwavering support have enriched my life in ways I never thought possible.</h5>
+              <p> </p>
+              <h5>Yet, as this day of love approaches, I find myself grappling with my own hesitations and uncertainties. I want you to know that my struggle to reach commitment has nothing to do with my feelings for you. If anything, it's a testament to just how deeply I care for you and how profoundly I want to get it right.</h5>
+              <p> </p>
+              <h5>The truth is, my love, you mean everything to me. Every moment we share is etched into the fabric of my soul, and the thought of a future without you is unimaginable. You've shown me what it means to be truly loved, and for that, I am endlessly grateful.</h5>
+              <p> </p>
+              <h5>But as much as I long to take that leap of faith and commit to you fully, I find myself held back by my own fears and insecurities. I worry that I may not be able to give you the love and support you deserve, or that I may somehow let you down.</h5>
+              <p> </p>
+              <h5>Yet, despite these doubts, one thing remains abundantly clear - I am willing to fight for us, to confront my fears head-on, and to work tirelessly towards building a future together. Because with you, my love, I see endless possibilities, endless potential for happiness and fulfillment.</h5>
+              <p> </p>
+              <h5>So, on this Valentine's Day, I want to make you a promise - a promise to be honest and open with you, to communicate my fears and insecurities, and to work hand in hand with you to overcome any obstacles that stand in our way.</h5>
+              <p> </p>
+              <h5>I may be struggling to reach commitment, but I want you to know that my love for you is unwavering. You are my rock, my guiding light, and the love of my life, and I am committed to doing whatever it takes to make our relationship thrive.</h5>
+              <p> </p>
+              <h5>Happy Valentine's Day, my dear. Here's to us - to love, to growth, and to the journey that lies ahead.</h5>
+              <p> </p>
+              <h5>With all my love,</h5>
+              <h5>Alfian</h5>
+            
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
 
-</script>
-<!-- <script>document.getElementById('Button1').addEventListener('click', function() {
-alert('HEHE THANKSSS! I LOVE YOU <3');
-});
-</script> -->
-<script src="js/yes.js"></script>
-<!-- <audio controls autoplay> -->
-        <!-- <source src="GFG.ogg" type="audio/ogg"> -->
-
-
-<div id="bottom">
-  <audio src="https://github.com/alfianpr/michelle/blob/main/assets/banmal.mp3?raw=true" preload="auto" autoplay controls></audio>
-</div>
-</body>
+    <div id="bottom">
+      <audio src="https://github.com/alfianpr/michelle/blob/main/assets/banmal.mp3?raw=true" preload="auto" autoplay controls loop></audio>
+    </div>
+  </body>
 </html>
